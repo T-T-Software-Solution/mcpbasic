@@ -1,5 +1,7 @@
 # Weather & MCPHostApp Solution
 
+![Solution Intro](intro.png)
+
 This solution contains two main projects that demonstrate the use of the Model Context Protocol (MCP) for tool-augmented AI applications:
 
 - **weather**: An MCP server that provides weather data and alerts using the National Weather Service API.
