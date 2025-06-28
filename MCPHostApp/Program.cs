@@ -8,10 +8,18 @@ IConfigurationRoot config = new ConfigurationBuilder()
     .AddUserSecrets<Program>() // Assumes this code is in your Program.cs file
     .Build();
 
-// Retrieve secrets
-var endpoint = new Uri(config["AzureOpenAI:Endpoint"]);
-var key = config["AzureOpenAI:Key"];
-var deployment = config["AzureOpenAI:Deployment"];
+// Retrieve secrets with null checks
+string? endpointStr = config["AzureOpenAI:Endpoint"];
+string? key = config["AzureOpenAI:Key"];
+string? deployment = config["AzureOpenAI:Deployment"];
+
+if (string.IsNullOrWhiteSpace(endpointStr) || string.IsNullOrWhiteSpace(key) || string.IsNullOrWhiteSpace(deployment))
+{
+    Console.WriteLine("Azure OpenAI configuration is missing. Please set Endpoint, Key, and Deployment in user secrets.");
+    return;
+}
+
+var endpoint = new Uri(endpointStr);
 
 // Create an IChatClient using Azure OpenAI with the settings from user secrets
 IChatClient client =
