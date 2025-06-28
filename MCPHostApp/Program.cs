@@ -30,10 +30,10 @@ IChatClient client =
     .Build();
 
 // Accept command line arguments for the MCP server project path
-string mcpProjectPath = args.Length > 1 ? args[1] : string.Empty;
+string mcpProjectPath = args.Length > 0 ? args[0] : string.Empty;
 if (string.IsNullOrWhiteSpace(mcpProjectPath))
 {
-    Console.WriteLine("Usage: dotnet run -- <PathToWeatherProject>");
+    Console.WriteLine("Usage: dotnet run <PathToWeatherProject>");
     return;
 }
 

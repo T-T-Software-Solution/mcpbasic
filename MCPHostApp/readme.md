@@ -50,7 +50,7 @@ This project is a sample client application for interacting with an MCP (Model C
 
 5. **Run the host app, specifying the MCP server project path:**
    ```powershell
-   dotnet run -- ..\weather
+   dotnet run ..\weather
    ```
    > The path after `--` should point to your MCP server project (e.g., the weather project).
 
