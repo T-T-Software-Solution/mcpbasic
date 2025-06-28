@@ -9,6 +9,7 @@ obj/
 .vs/
 
 # VS Code
+.vscode/
 .history/
 
 # Rider

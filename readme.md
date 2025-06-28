@@ -42,7 +42,39 @@ This solution contains two main projects that demonstrate the use of the Model C
    ```powershell
    dotnet build
    ```
-3. **Follow the instructions in each project README** to run the server and client.
+3. **(Optional) Create an `mcp.json` configuration in `.vscode`:**
+   - Create a folder named `.vscode` in your workspace if it doesn't exist.
+   - Inside `.vscode`, create a file named `mcp.json`.
+   - Example contents for `mcp.json`:
+     ```jsonc
+     {
+         "servers": {
+             "time": {
+                 "command": "docker",
+                 "args": [
+                     "run",
+                     "-i",
+                     "--rm",
+                     "mcp/time"
+                 ]
+             },
+             "postgres": {
+                 "command": "npx",
+                 "args": [
+                     "-y",
+                     "@modelcontextprotocol/server-postgres",
+                     "postgresql://yourdbusername:yourdbpassword@yourdbserver:65432/yourdbname"
+                 ]
+             },
+             "weather": {
+                 "command": "dotnet",
+                 "args": ["run", "--project", "weather", "--no-build"]
+             }
+         }
+     }
+     ```
+   - This file allows you to define and launch MCP servers easily from VS Code or compatible tools.
+4. **Follow the instructions in each project README** to run the server and client.
 
 ---
 
