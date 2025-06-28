@@ -1,0 +1,97 @@
+# .NET build results
+bin/
+obj/
+[Ll]og/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# VS Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.userprefs
+*.dbmdl
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish results
+*.publish/
+publish/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+.nuget/
+
+# User secrets (development machine only)
+secrets.json
+*.secret.json
+
+# dotnet user secrets
+**/secrets.json
+**/*.secret.json
+
+# VS for Mac
+*.pidb
+*.userprefs
+
+# Visual Studio Code settings
+.vscode/
+.vscode-test/
+
+# DotCover
+.idea/.idea.DotSettings
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# dotnet-watch
+*.dotnetwatch.json
+
+# Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Backup & local files
+*.bak
+*.swp
+*~
+
+# dotenv environment files
+.env
+.env.*
