@@ -9,6 +9,12 @@ This solution contains two main projects that demonstrate the use of the Model C
 
 ---
 
+## Video Explanation
+
+[![Video Explanation](https://img.youtube.com/vi/hUWp52BfEs0/0.jpg)](https://youtu.be/hUWp52BfEs0)
+
+---
+
 ## Projects Overview
 
 ### [weather](./weather/readme.md)
